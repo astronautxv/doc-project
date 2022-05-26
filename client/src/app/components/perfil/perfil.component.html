@@ -1,0 +1,15 @@
+<p>Login Successful!</p>
+<button (click)="test_jwt()">Test JWT</button>
+<li *ngFor="let item of items">{{item}}</li>
+
+<p>f1</p>
+<input type="file" (change)="loadFile1($any($event).target.files)">
+<br>
+<p>f2</p>
+<input type="file" (change)="loadFile2($any($event).target.files)">
+<br>
+<br>
+<button (click)="uploadOneFile()" accept="image/png, image/jpeg,  image/jpg">Upload</button>
+<br>
+<br>
+<button (click)="uploadTwoFiles()" accept="application/msword application/pdf">Upload 2</button>
